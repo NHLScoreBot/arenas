@@ -1,6 +1,6 @@
 ## NHL Arena Data ##
 
-This repository provides both some data about NHL arenas (generated from Wikipedia's pages on the subject) and a script to generate the output data.
+This repository provides both some data about NHL arenas (generated from Wikipedia's [pages](https://en.wikipedia.org/wiki/List_of_NHL_arenas) on the subject) and a script to generate the output data.
 
 ### Using ###
 
