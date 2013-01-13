@@ -24,7 +24,11 @@ Example team record:
 			"long":-79.98917
 		}
 
-You can either download the two files locally locally, or you can fetch [arenas.json](https://raw.github.com/nhlscorebot/arenas/master/arenas.json) and [teams.json](https://raw.github.com/nhlscorebot/arenas/master/teams.json) over the network.
+### Fetching over HTTP ###
+
+If you need the arena name as a key, just make a GET request to `https://raw.github.com/nhlscorebot/arenas/master/arenas.json`, parse the JSON, and go.
+
+If you want keys to be the home team, make a GET request to `https://raw.github.com/nhlscorebot/arenas/master/teams.json` to get the data.
 
 ### Building the Data File ###
 
