@@ -42,7 +42,7 @@ Simple! Just run `node fetchstadiums.js` and you've got shiny new `arenas.json` 
 
 `fetchstadiums.coffee` and `fetchstadiums.js`, part of [@NHLScoreBot](https://twitter.com/nhlscorebot), is provided to you under the following license:
 
-	Copyright (c) 2013, David Pearson
+	Copyright (c) 2013-2014, David Pearson
 	All rights reserved.
 	
 	Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
