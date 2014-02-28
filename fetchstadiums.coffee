@@ -23,10 +23,6 @@ stadiums={}
 connect "en.wikipedia.org", "/wiki/List_of_NHL_arenas", (body, path) ->
 	lines=body.toString().replace(/\n/g, "").split("</a></td><td><b><a href=\"")
 
-	outdoors=lines[lines.length-1].split("Reference</th>")[9].split("</a></th><td><a href=\"").slice(1)
-	for item in outdoors
-		lines.push item.split("</td></tr></table>")[0]
-
 	i=1
 	done=0
 
