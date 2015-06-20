@@ -4,7 +4,7 @@
 ###
 
 fs = require "fs"
-http = require "http"
+https = require "https"
 
 connect = (host, path, cb) ->
 	opts =
@@ -16,7 +16,7 @@ connect = (host, path, cb) ->
 							AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C
 							Safari/525.13"
 
-	req = http.request opts, (res) ->
+	req = https.request opts, (res) ->
 		body = ""
 
 		res.on "data", (chunk) ->
@@ -29,7 +29,7 @@ connect = (host, path, cb) ->
 
 stadiums = {}
 
-connect "en.wikipedia.org", "/wiki/List_of_NHL_arenas", (body, path) ->
+connect "en.wikipedia.org", "/wiki/List_of_National_Hockey_League_arenas", (body, path) ->
 	lines = body.toString()
 		.replace /\n/g, ""
 		.split "</a></td><td><b><a href=\""
